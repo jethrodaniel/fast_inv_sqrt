@@ -16,6 +16,16 @@ jobs:
     - name: apt dependencies
       run: sudo apt install -y gcc gcc-multilib
 
-    - name: do it
+    - name: test
       run: |
-        make
+        make test
+    - name: test 64
+      run: |
+        make test64
+
+    - name: bench
+      run: |
+        make bench
+    - name: bench 64
+      run: |
+        make bench64

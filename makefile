@@ -1,10 +1,12 @@
 # sudo apt-get install gcc-multilib
 CFLAGS=-m32
 
-default: bench test
+default: test
 
-64:
-	$(MAKE) CFLAGS=-m64
+test64:
+	$(MAKE) CFLAGS=-m64 test
+bench64:
+	$(MAKE) CFLAGS=-m64 bench
 
 test: ctap
 	gcc $(CFLAGS) -o ./test src/fast_inv_sqrt.c spec/fast_inv_sqrt.c && ./test; rm -f ./test
