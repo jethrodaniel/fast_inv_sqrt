@@ -1,3 +1,6 @@
 [submodule "third_party/ctap"]
 	path = third_party/ctap
 	url = https://github.com/jhunt/ctap
+[submodule "third_party/prof"]
+	path = third_party/prof
+	url = https://github.com/cyrus-and/prof
