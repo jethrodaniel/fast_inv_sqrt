@@ -6,4 +6,5 @@
 
 TESTS {
   cmp_ok(quake_3_inv_sqrt(25), "==", 0.2, "1/√25 == 0.2");
+  cmp_ok(fast_inv_sqrt(25),     "==", 0.2, "1/√25 == 0.2");
 }
