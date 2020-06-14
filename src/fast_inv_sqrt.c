@@ -6,7 +6,7 @@
 // > of C preprocessor directives, but including the exact original comment
 // > text
 //
-// Wikipedia sourced if from https://github.com/id-Software/Quake-III-Arena/blob/dbe4ddb10315479fc00086f08e25d968b4b43c49/code/game/q_math.c#L549-L572
+// Originally from https://github.com/id-Software/Quake-III-Arena/blob/dbe4ddb10315479fc00086f08e25d968b4b43c49/code/game/q_math.c#L549-L572
 //
 float Q_rsqrt( float number )
 {
@@ -117,7 +117,7 @@ float Q_rsqrt( float number )
 //
 // The positive roots of the inverse square root function are solutions to
 //
-//     f(x)  = 1/x^2 - x_0 = 0  (x_0) is the inital guess
+//     f(x)  = 1/x^2 - x_0 = 0         (x_0 is the inital guess)
 //
 //     f(x)  = 1/x^2 - x_0
 //     f'(x) = -2 x^(-2 - 1) = 2/x^3
@@ -140,13 +140,13 @@ float fast_inv_sqrt(float number)
   // interpret the bits of the floating-point input as an integer
 	int32_t I_x = *(int32_t *)&number;
 
-  // approximate integer representation of y
+  // approximate the integer representation of the inverse square root
 	int32_t I_y = 0x5f3759df - (I_x >> 1);
 
   // cast the integer representation back to floating point
   float y = *(float *)&I_y;
 
-  // Use Newton's method to increase accuracy
+  // use Newton's method to increase accuracy
 	y = y * (1.5F - ((number * 0.5F) * y * y)); // 1st iteration
   y = y * (1.5F - ((number * 0.5F) * y * y)); // 2nd iteration
 
