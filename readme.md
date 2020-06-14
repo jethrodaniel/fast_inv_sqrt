@@ -1,5 +1,8 @@
 # fast inverse square root
 
+![](https://github.com/jethrodaniel/fast_inv_sqrt/workflows/ci/badge.svg)
+![](https://img.shields.io/github/license/jethrodaniel/fast_inv_sqrt.svg)
+
 The famed _evil floating point bit level hacking_, explained.
 
 ## run locally
