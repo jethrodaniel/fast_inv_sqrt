@@ -1,3 +1,5 @@
+#include "fast_inv_sqrt.h"
+
 // From https://en.wikipedia.org/wiki/Fast_inverse_square_root
 //
 // > ...fast inverse square root implementation from Quake III Arena, stripped

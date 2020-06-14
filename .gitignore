@@ -1,2 +1,4 @@
-*.o
-.spec
+src/*.o
+src/*.test
+spec/*.o
+spec/*.test
