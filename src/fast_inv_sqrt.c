@@ -27,7 +27,7 @@ float Q_rsqrt( float number )
 
 // Compute the inverse square root of a non-negative number.
 //
-//     inv_inv_sqrt(25) #=> 0.2 == 1/√25
+//     fast_inv_sqrt(25) // 0.2 == 1/√25
 //
 // This directly computes an approximation by utilizing the structure of
 // IEEE 754-1985 32-bit floating-point numbers.
