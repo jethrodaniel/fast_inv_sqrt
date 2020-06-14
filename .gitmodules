@@ -1,3 +1,3 @@
 [submodule "third_party/ctap"]
 	path = third_party/ctap
-	url = https://github.com/hunt/ctap
+	url = https://github.com/jhunt/ctap
