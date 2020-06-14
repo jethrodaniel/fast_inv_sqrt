@@ -14,7 +14,7 @@ jobs:
         submodules: true
 
     - name: apt dependencies
-      run: sudo apt install -y gperf bison gcc g++
+      run: sudo apt install -y gcc gcc-multilib
 
     - name: do it
       run: |
