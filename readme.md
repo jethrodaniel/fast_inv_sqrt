@@ -3,7 +3,7 @@
 ![](https://github.com/jethrodaniel/fast_inv_sqrt/workflows/ci/badge.svg)
 ![](https://img.shields.io/github/license/jethrodaniel/fast_inv_sqrt.svg)
 
-The famed _evil floating point bit level hacking_, explained.
+The famed _evil floating point bit level hacking_..
 
 ## run locally
 
@@ -19,3 +19,7 @@ make
   - [ ] ~~compare output to hand-written assembly?~~
 - [ ] `sqrt` version
 - [ ] profiling
+
+## credit
+
+- https://medium.com/hard-mode/the-legendary-fast-inverse-square-root-e51fee3b49d9
